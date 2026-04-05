@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — LocalVoiceType</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background: #1A1A2E;
+      color: #fff;
+      min-height: 100vh;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    nav .logo {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #5A66D1;
+      text-decoration: none;
+    }
+    nav a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 15px; }
+    nav a:hover { color: #fff; }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 24px 100px;
+    }
+
+    .lang-switch { display: flex; gap: 12px; margin-bottom: 48px; }
+    .lang-btn {
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      border: 1px solid rgba(255,255,255,0.20);
+      background: transparent;
+      color: rgba(255,255,255,0.60);
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: rgba(90,102,209,0.20);
+      border-color: #5A66D1;
+      color: #fff;
+    }
+
+    .lang-content { display: none; }
+    .lang-content.active { display: block; }
+
+    h1 { font-size: 36px; font-weight: 700; margin-bottom: 8px; }
+    .meta { color: rgba(255,255,255,0.40); font-size: 14px; margin-bottom: 48px; }
+
+    h2 { font-size: 20px; font-weight: 600; margin: 40px 0 12px; color: #8A96E8; }
+    p, li { font-size: 16px; line-height: 1.75; color: rgba(255,255,255,0.75); }
+    ul { padding-left: 24px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+
+    .highlight {
+      background: rgba(90,102,209,0.12);
+      border: 1px solid rgba(90,102,209,0.25);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight p { color: rgba(255,255,255,0.85); }
+    a { color: #8A96E8; }
+    a:hover { color: #fff; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.30);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="index.html">LocalVoiceType</a>
+    <a href="index.html">← Back</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="lang-switch">
+      <button class="lang-btn active" onclick="setLang('en', this)">🇬🇧 English</button>
+      <button class="lang-btn" onclick="setLang('de', this)">🇩🇪 Deutsch</button>
+    </div>
+
+    <!-- ══ ENGLISH ══ -->
+    <div id="lang-en" class="lang-content active">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: April 2026</p>
+
+      <div class="highlight">
+        <p>
+          <strong>Summary:</strong> LocalVoiceType does not collect, store, or transmit
+          any personal data. All processing happens exclusively on your Mac.
+        </p>
+      </div>
+
+      <h2>1. Data Controller</h2>
+      <p>
+        Thomas Pallus<br>
+        Contact: <a href="https://github.com/tomekcp/localvoicetype-support/issues">GitHub Issues</a>
+      </p>
+
+      <h2>2. What data is processed?</h2>
+      <p>LocalVoiceType processes only the following data:</p>
+      <ul>
+        <li>
+          <strong>Microphone audio:</strong> Voice recordings are processed exclusively on your
+          device. They are never stored or transmitted to external servers.
+          Audio data is discarded immediately after transcription.
+        </li>
+        <li>
+          <strong>AI model download:</strong> On first launch, the app downloads the Whisper model
+          from HuggingFace (~632 MB). HuggingFace's
+          <a href="https://huggingface.co/privacy" target="_blank">privacy policy</a> applies
+          to this one-time download. After downloading, the model is stored locally —
+          no further network access occurs during normal use.
+        </li>
+      </ul>
+
+      <h2>3. No data collection</h2>
+      <p>The app does <strong>not</strong> collect, store, or transmit:</p>
+      <ul>
+        <li>Personal data</li>
+        <li>Usage statistics or telemetry</li>
+        <li>Crash reports to external services</li>
+        <li>Device information</li>
+      </ul>
+
+      <h2>4. Microphone permission</h2>
+      <p>
+        The app requires microphone access solely for speech transcription.
+        You can revoke this permission at any time in
+        <em>System Settings → Privacy &amp; Security → Microphone</em>.
+      </p>
+
+      <h2>5. Accessibility permission</h2>
+      <p>
+        The Auto-Type feature (inserting transcribed text into other apps) requires
+        Accessibility access. This permission is used exclusively to send keystrokes
+        to the currently active application.
+      </p>
+
+      <h2>6. No third parties</h2>
+      <p>
+        The app does not use any analytics tools, tracking frameworks, advertising services,
+        or third-party SDKs of any kind.
+      </p>
+
+      <h2>7. Changes</h2>
+      <p>
+        Material changes to this privacy policy will be published on this page.
+        The date of the last update is shown at the top.
+      </p>
+
+      <h2>8. Contact</h2>
+      <p>
+        For privacy-related questions:
+        <a href="https://github.com/tomekcp/localvoicetype-support/issues">GitHub Issues</a>
+      </p>
+    </div>
+
+    <!-- ══ DEUTSCH ══ -->
+    <div id="lang-de" class="lang-content">
+      <h1>Datenschutzerklärung</h1>
+      <p class="meta">Zuletzt aktualisiert: April 2026</p>
+
+      <div class="highlight">
+        <p>
+          <strong>Kurzfassung:</strong> LocalVoiceType erfasst, speichert oder überträgt
+          keine persönlichen Daten. Alle Verarbeitung findet ausschließlich lokal auf
+          deinem Mac statt.
+        </p>
+      </div>
+
+      <h2>1. Verantwortliche Person</h2>
+      <p>
+        tomekcp<br>
+        Kontakt: <a href="https://github.com/tomekcp/localvoicetype-support/issues">GitHub Issues</a>
+      </p>
+
+      <h2>2. Welche Daten werden verarbeitet?</h2>
+      <p>LocalVoiceType verarbeitet ausschließlich die folgenden Daten:</p>
+      <ul>
+        <li>
+          <strong>Mikrofon-Audio:</strong> Die Sprachaufnahme wird ausschließlich lokal auf deinem
+          Gerät verarbeitet. Sie wird weder gespeichert noch an externe Server übertragen.
+          Nach der Transkription werden die Audiodaten sofort verworfen.
+        </li>
+        <li>
+          <strong>KI-Modell-Download:</strong> Beim ersten Start lädt die App das Whisper-Modell
+          von HuggingFace (~632 MB). Dabei gelten die
+          <a href="https://huggingface.co/privacy" target="_blank">Datenschutzbestimmungen von HuggingFace</a>.
+          Nach dem einmaligen Download wird das Modell lokal gespeichert —
+          kein weiterer Netzwerkzugriff im normalen Betrieb.
+        </li>
+      </ul>
+
+      <h2>3. Keine Datenerhebung</h2>
+      <p>Die App erhebt, speichert oder überträgt <strong>keine</strong>:</p>
+      <ul>
+        <li>Personenbezogenen Daten</li>
+        <li>Nutzungsstatistiken oder Telemetrie</li>
+        <li>Absturzberichte an externe Dienste</li>
+        <li>Geräteinformationen</li>
+      </ul>
+
+      <h2>4. Mikrofon-Berechtigung</h2>
+      <p>
+        Die App benötigt Zugriff auf das Mikrofon ausschließlich für die Sprachtranskription.
+        Du kannst die Berechtigung jederzeit unter
+        <em>Systemeinstellungen → Datenschutz &amp; Sicherheit → Mikrofon</em> widerrufen.
+      </p>
+
+      <h2>5. Barrierefreiheits-Berechtigung (Accessibility)</h2>
+      <p>
+        Für die Auto-Type-Funktion (Text in andere Apps einfügen) benötigt die App
+        Accessibility-Zugriff. Diese Berechtigung wird ausschließlich zum Senden von
+        Tastatureingaben an die aktive App verwendet.
+      </p>
+
+      <h2>6. Keine Drittanbieter</h2>
+      <p>
+        Die App verwendet keine Analyse-Tools, Tracking-Frameworks, Werbedienste oder
+        sonstigen Drittanbieter-SDKs.
+      </p>
+
+      <h2>7. Änderungen</h2>
+      <p>
+        Wesentliche Änderungen dieser Datenschutzerklärung werden auf dieser Seite
+        veröffentlicht. Das Datum der letzten Aktualisierung steht oben.
+      </p>
+
+      <h2>8. Kontakt</h2>
+      <p>
+        Bei Fragen zum Datenschutz:
+        <a href="https://github.com/tomekcp/localvoicetype-support/issues">GitHub Issues</a>
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Thomas Pallus &nbsp;·&nbsp; <a href="index.html">LocalVoiceType</a>
+  </footer>
+
+  <script>
+    function setLang(lang, btn) {
+      document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LocalVoiceType — Voice to Text on your Mac</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+      background: #1A1A2E;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    /* ── Navigation ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    nav .logo {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #5A66D1;
+    }
+    nav a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 15px;
+      margin-left: 32px;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #fff; }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      padding: 100px 24px 80px;
+    }
+    .icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 27px;
+      background: linear-gradient(135deg, #1A1A2E 0%, #4A3080 100%);
+      margin: 0 auto 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-bars { display: flex; align-items: center; gap: 5px; }
+    .icon-bar  { width: 5px; border-radius: 3px; background: rgba(255,255,255,0.90); }
+
+    h1 {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    h1 span { color: #5A66D1; }
+
+    .subtitle {
+      font-size: 20px;
+      color: rgba(255,255,255,0.60);
+      max-width: 540px;
+      margin: 0 auto 48px;
+      line-height: 1.6;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(90,102,209,0.15);
+      border: 1px solid rgba(90,102,209,0.35);
+      color: #8A96E8;
+      font-size: 13px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 48px;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Features ── */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px 100px;
+    }
+    .feature {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 32px 28px;
+    }
+    .feature .icon-emoji { font-size: 36px; margin-bottom: 16px; }
+    .feature h3 { font-size: 18px; font-weight: 600; margin-bottom: 10px; }
+    .feature p  { font-size: 15px; color: rgba(255,255,255,0.55); line-height: 1.6; }
+
+    /* ── Support section ── */
+    .support {
+      background: rgba(255,255,255,0.03);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      padding: 80px 24px;
+    }
+    .support h2 { font-size: 32px; font-weight: 700; margin-bottom: 16px; }
+    .support p  { color: rgba(255,255,255,0.55); font-size: 17px; margin-bottom: 40px; }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 8px;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    .btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .btn-primary { background: #5A66D1; color: #fff; }
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.20);
+      color: rgba(255,255,255,0.80);
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.30);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    footer a { color: rgba(255,255,255,0.40); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,0.70); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">LocalVoiceType</div>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://github.com/tomekcp/localvoicetype-support/issues/new?template=bug_report.md">Report a Bug</a>
+      <a href="https://github.com/tomekcp/localvoicetype-support/issues/new?template=feature_request.md">Request a Feature</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="icon">
+      <div class="icon-bars">
+        <div class="icon-bar" style="height:13px"></div>
+        <div class="icon-bar" style="height:22px"></div>
+        <div class="icon-bar" style="height:30px"></div>
+        <div class="icon-bar" style="height:37px"></div>
+        <div class="icon-bar" style="height:30px"></div>
+        <div class="icon-bar" style="height:22px"></div>
+        <div class="icon-bar" style="height:13px"></div>
+      </div>
+    </div>
+
+    <div class="badge">macOS 14+ · No Cloud · No Subscription</div>
+
+    <h1>Speak.<br><span>Text appears instantly.</span></h1>
+    <p class="subtitle">
+      LocalVoiceType transcribes your voice directly on your Mac —
+      fully local, no internet required.
+    </p>
+  </section>
+
+  <div class="features">
+    <div class="feature">
+      <div class="icon-emoji">🔒</div>
+      <h3>100% Local</h3>
+      <p>Everything runs entirely on your Mac. Your voice never leaves your device.</p>
+    </div>
+    <div class="feature">
+      <div class="icon-emoji">⌨️</div>
+      <h3>Auto-Type</h3>
+      <p>One keystroke — transcribed text appears directly in any app: Mail, Slack, Notion …</p>
+    </div>
+    <div class="feature">
+      <div class="icon-emoji">✈️</div>
+      <h3>Works Offline</h3>
+      <p>No Wi-Fi needed. Works on a plane, on a train, anywhere.</p>
+    </div>
+    <div class="feature">
+      <div class="icon-emoji">🌍</div>
+      <h3>99 Languages</h3>
+      <p>German, English, Spanish, French and 95 more — automatic language detection included.</p>
+    </div>
+  </div>
+
+  <section class="support">
+    <h2>Support &amp; Feedback</h2>
+    <p>Found a bug or have a feature request? Reach out directly here.</p>
+    <a class="btn btn-primary"
+       href="https://github.com/tomekcp/localvoicetype-support/issues/new?template=bug_report.md">
+      🐛 Report a Bug
+    </a>
+    <a class="btn btn-secondary"
+       href="https://github.com/tomekcp/localvoicetype-support/issues/new?template=feature_request.md">
+      💡 Request a Feature
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 Thomas Pallus &nbsp;·&nbsp;
+      <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="https://github.com/tomekcp/localvoicetype-support/issues">All Issues</a>
+    </p>
+  </footer>
+
+</body>
+</html>
